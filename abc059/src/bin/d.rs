@@ -2,9 +2,12 @@ use proconio::input;
 
 fn main() {
     input! {
-        n: usize,
-        a: [i64; n],
+        x: i64,
+        y: i64
     }
-    let ans: i64 = a.iter().sum();
-    println!("{ans}");
+    if (x - y).abs() <= 1 {
+        println!("Brown");
+    } else {
+        println!("Alice");
+    }
 }
