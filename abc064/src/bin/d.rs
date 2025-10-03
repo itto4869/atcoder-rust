@@ -18,13 +18,10 @@ fn main() {
             ans += "(";
         } else {
             right += 1;
+            ans += ")";
         }
-        println!("{} {} {}", left, right, ans);
     }
     for _ in 0..right {
-        ans = "(".to_string() + &ans;
-    }
-    for _ in 0..left {
         ans = "(".to_string() + &ans;
     }
     for _ in 0..left {
